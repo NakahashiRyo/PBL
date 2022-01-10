@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>カレンダー</title>
+  <meta charset="UTF-8">
+  <!--<link href="../css/calendar.css" rel="stylesheet"> -->
+  <link href="../css/calendar1-2.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>選んでください</h1>
+  <div id="select">
+
+    <select name="year" id="year">
+      <option value="" style="display: none;">西暦</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+      <option value="2028">2028</option>
+      <option value="2029">2029</option>
+      <option value="2030">2030</option>
+    </select>
+
+    <!-- <p> 月 </p> -->
+    <select name="month" id="month">
+      <option value="" style="display: none;" color:>月</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+
+    <input type="button" value="決定" id="check" onclick="check">
+  </div>
+
+  <div id="button">
+    <button id="mae" type="button">前の月</button>
+    <button id="tugi" type="button">次の月</button>
+  </div>
+  <div id="calendar"></div>
+</body>
+<script src="../js/calendar.js"></script>
+
+</html>

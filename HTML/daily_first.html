@@ -1,0 +1,58 @@
+<!--<?php
+$date = $_POST['date'];
+?>-->
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <title>日記を登録</title>
+  <meta charset="UTF-8" />
+  <link href="../css/test.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main">
+    <h1 id="dirly_first-header" class="fuchidori2"><font face="Meiryo UI">日記を登録してください</font></h1>
+  </div>
+  <h2>
+    <font size="17"><div id="date"></div></font>
+  </h2>
+  <div class="dirly_first-mainform">
+    <div class="time">
+      <p><span style="background-color:rgb(216, 211, 207)">時間を入力</span></p>
+      <input type="text" name="hour1" />:<input type="text" name="second1" />～ <input type="text" name="hour2" />:<input
+        type="text" name="second2" />
+    </div>
+
+    <div class="daily_first-text">
+      <div class="place">
+        <p><span style="background-color:rgb(216, 211, 207)">どこで(場所)</span></p>
+        <input type="text" name="where" />
+      </div>
+      <div class="human">
+        <p><span style="background-color:rgb(216, 211, 207)">　　誰と　　</span></p>
+        <input type="text" name="who" />
+      </div>
+      <div class="way">
+        <p><span style="background-color:rgb(216, 211, 207)">　どのように　</span></p>
+        <textarea name="how" placeholder="テキストを入力"></textarea>
+      </div>
+      <div class="done">
+        <p><span style="background-color:rgb(216, 211, 207)">　何をした　</span></p>
+        <textarea name="what" placeholder="テキストを入力"></textarea>
+      </div>
+    </div>
+    <input type="file" id="filechoice-js" multiple />
+    <div id="preview"></div>
+    <script type="text/javascript" src="../js/fileupload.js"></script>
+    <div class="daily_first-button">
+      <input type="button" id="button" value="戻る" onclick="history.back()">
+      <input type="button" id="button" value="日記を保存" onclick="history.back()"></a>
+    </div>
+
+  </div>
+</body>
+<script src="../js/daily2.js"></script>
+
+</html>

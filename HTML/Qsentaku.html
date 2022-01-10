@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>JavaScript Sample</title>
+    <link rel="stylesheet" type="text/css" href="../css/test.css" media="all">
+
+</head>
+
+<body>
+
+    <div class="Qsentaku-header">
+        <div id="daily-button">
+            <input type="button" class="button2" id="daily" value="日記へ">
+        </div>
+    </div>
+    <div id="form-main">
+        <div id="form-div">
+            <div class="main">
+            <h1 class="fuchidori2">⁂選んでください⁂</h1>
+        </div>
+            <h2>
+                <div id="date"></div>
+            </h2>
+
+
+            <div class="Qsentaku-mainform">
+                <form action="./setcss.cgi" method="get" name="mainForm">
+                    <input type="hidden" name="sendText" id="sendText" value="自宅内"><br>
+                    <input type="button" id="sendButton" value="自宅内" class="button">
+                    <!----><br>
+
+                    <input type="hidden" name="sendText" id="sendText2" value="自宅外"><br>
+                    <input type="button" id="sendButton2" value="自宅外" class="button">
+                    <!----><br>
+
+                    <input type="hidden" name="sendText" id="sendText3" value="ランダム"><br>
+                    <input type="button" id="sendButton3" value="ランダム" class="button">
+                    <!----><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+    <title>出題画面</title>
+    <meta charset="UTF-8">
+    <link href="../css/test.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="QuizQuestion-header">
+        
+        <h1>
+            <div id="date"></div>
+            Question
+            <div id="message"></div>
+        </h1>
+    </div>
+
+    <div class="QuizQuestion-mainform">
+        <div id="QuizQuestion-photo">
+            写真(あれば)
+        </div>
+        <div class="QuizQuestion-quiz">
+            <div class="question">
+                <p>
+                    抜けている所には何が入るだろうか?
+                </p>
+            </div>
+            <div class="time">
+                <p>
+                    <span class="year">when(いつ)：2000</span>年
+                    <span class="month">1</span>月
+                    <span class="date">1</span>日
+                </p>
+            </div>
+            <div class="QuizQuestion-content">
+                <div class="location">
+                    <p id="Q_location">
+                        Where(どこで):ああああああああ!
+                    </p>
+                </div>
+                <div class="man">
+                    <p id="Q_man">
+                        Who(誰と):いいいいいいいい！
+                    </p>
+                </div>
+                <div class="did">
+                    <p id="Q_did">
+                        What(何をした):うううううううう！
+                    </p>
+                </div>
+                <div class="case">
+                    <p id="Q_case">
+                        How(どのように):ええええええええ！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Quiz-nav">
+        <div class="button-back">
+            <button class="back-text">問題</button>
+        </div>
+        <div class="button-forward">
+            <button id="forward-text">答え</button>
+        </div>
+    </div>
+    <div class="QuizQuestion-button">
+        <input type="button" id="button" onclick="location.href='Qsentaku.html'" value="戻る">
+        <input type="button" id="save" value="日記へ">
+    </div>
+    <script type="text/javascript" src="../js/QuizQuestion.js"></script>
+</body>
+
+</html>
